@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'techmono';
+    src: url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+}
+@font-face{
+    font-family: 'monocutive';
+    src: url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Share+Tech+Mono&display=swap");
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #170b2a;
+    z-index: 0;  
+}
+
+.section {
+    padding: 20px;
+    margin: 10px 0;
+    position: relative;
+    z-index: 0; 
+}
+
+
+.finisher-header{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    z-index: 1;
+
+}
+
+.cabeçalho{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+   
+}
+
+.navbar{
+    position: fixed;
+    font-family: 'monocutive', monospace;
+    width: 100%;
+    display:flex ;
+    position: fixed;
+}
+
+
+.navbar .left a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0px 15px;
+
+}
+
+.hero-content{
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'techmono', monospace;
+    margin: 0;
+}
+
+.section{
+    margin: 60px 0; /* 60px acima e abaixo */
+    padding: 20px;
+}
+
+h2{
+    font-family: 'techmono', monospace;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+p{
+    font-family: 'monocutive', monospace;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.profile-pic {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 20px;
+}
+
+.profile-pic img {
+    width: 1150px;      
+    height: auto;
+    border-radius: 10px; 
+    object-fit: cover;
+}
+
+
+.project-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center; /* Para centralizar os itens no container */
+}
+
+.project-list li {
+    margin-right: 20px;
+    text-align: center; /* Garante que o nome ficará centralizado abaixo da imagem */
+}
+
+.project-list img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.project-name {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-family: 'monocutive', monospace;
+    font-size: 16px;
+    margin-top: 10px;
+}
