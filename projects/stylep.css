@@ -1,0 +1,88 @@
+/* Importação de fontes */
+@font-face { 
+    font-family: 'techmono';
+    src: url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+}
+@font-face{
+    font-family: 'monocutive';
+    src: url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Share+Tech+Mono&display=swap");
+}
+.navbar .left a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    display: inline-block;
+    font-family: 'monocutive', monospace;
+}
+
+/* Estilo geral para a página de Projetos */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f1d3dc; /* Fundo claro */
+    z-index: 0;
+}
+
+.section {
+    padding: 20px;
+    margin: 10px 0;
+    position: relative;
+    z-index: 0;
+}
+
+
+/* Títulos e parágrafos */
+h2 {
+    font-family: 'techmono', monospace;
+    font-size: 2rem;
+    color: #333333; /* Cor mais escura para os títulos */
+    text-align: center;
+    margin: 70px;
+}
+
+p {
+    font-family: 'monocutive', monospace;
+    font-size: 1.5rem;
+    color: #666666; /* Cor mais suave para o texto */
+    text-align: center;
+}
+
+
+/* Listagem de projetos */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 50px; /* Espaço uniforme entre itens (substitui margins) */
+    list-style-type: none;
+    padding: 0;
+    max-width: 1100px; /* Opcional: limita a largura total do container */
+    margin: 0 auto; /* Centraliza o container na página */
+}
+
+/* Cada item de projeto */
+.project-list li {
+    text-align: center;
+    flex: 0 0 250px; /* Largura fixa - ajuste conforme necessário */
+    padding: 15px;
+}
+
+/* Imagens dos projetos */
+.project-list img {
+    width: 100%;
+    max-width: 220px; /* Reduz um pouco o tamanho da imagem */
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+/* Nomes dos projetos */
+.project-name {
+    display: block;
+    color: #333;
+    font-family: 'monocutive', monospace;
+    font-size: 16px;
+    
+
+}

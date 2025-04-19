@@ -1,0 +1,145 @@
+@font-face { 
+    font-family: 'techmono';
+    src: url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+}
+@font-face{
+    font-family: 'monocutive';
+    src: url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Share+Tech+Mono&display=swap");
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'techmono', 'monospace';
+    background-color:  #f1d3dc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #daa7b6;
+    color: #333;
+    padding: 10px 0;
+}
+
+.navbar .left a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    display: inline-block;
+    font-family: 'monocutive', monospace;
+}
+
+/* Detalhes do Projeto */
+.project-detail {
+    padding: 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagem do projeto */
+.project-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Título do projeto */
+.project-title {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #333;
+    text-align: center;
+    font-family: 'techmono', monospace;
+    font-weight: bold;
+}
+
+/* Descrição do projeto */
+.project-description {
+    margin-top: 20px;
+
+}
+
+.project-description h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #444;
+    font-family: 'techmono', monospace;
+}
+
+.project-description p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.8;
+    font-family: 'monocutive', monospace;
+}
+
+.project-description ul {
+    list-style-type: disc;
+    margin-left: 30px;
+    font-family: 'cutive', monospace;
+    color: #666;
+
+}
+
+.project-description h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: #333;
+    font-family: 'techmono', monospace;
+}
+
+
+/* Links relacionados */
+.project-links {
+    margin-top: 30px;
+}
+
+.project-links h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+    font-family: 'techmono', monospace;
+}
+
+.project-links ul {
+    list-style-type: none;
+}
+
+.project-links li {
+    margin: 5px 0;
+}
+
+.project-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'monocutive', monospace;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #daa7b6;
+    color: #333;
+    margin-top: 50px;
+    font-family: 'techmono', monospace;
+}

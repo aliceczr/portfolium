@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Alice Cruz</title>
+    <title>Alice Cruz | Data Scientist</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body >
+<body>
   
-  <header class="finisher-header">
+  <header  class="finisher-header" style="width: 100%; height: 100vh;">
     <!-- Cabeçalho fixo -->
     <div class='cabeçalho'>
       <nav class="navbar">
@@ -21,45 +21,62 @@
       </nav>
     </div>
     <div class="hero-content">
-          <h1>'AI is the bridge between imagination and reality.'</h1> 
+          <h1>"Somewhere, something incredible is waiting to be known." - Carl Sagan</h1> 
     </div>
   </header>
       
-    <!-- Seção sobre mim -->
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <div class="profile-pic">
-          <img src="../images/Design sem nome (3).png" alt="Alice Cruz">
+  <!-- Seção sobre mim -->
+  <section id="about" class="section scroll-reveal">
+      <h2 class="scroll-reveal">About Me</h2>
+      <div class="profile-pic scroll-reveal">
+        <img src="../images/Design sem nome (3).png" alt="Alice Cruz">
       </div>
-        <p>Hello! My name is Alice, I am a Data Science professional with a great passion for Artificial Intelligence. I have 2 years of experience in the field as an intern, where I had the opportunity to work with different data sets, applying analysis and visualization techniques to find patterns and generate insights that could guide strategic decisions. I am constantly learning, exploring new tools and methodologies that allow me to grow and contribute to technological innovations in the field of AI, where I intend to grow and specialize more and more.</p>
-    </section>
+      <p class="scroll-reveal">
+        Hello! My name is Alice, I am a Data Science professional with a great passion for Artificial Intelligence. 
+        I have 2 years of experience in the field as an intern, where I had the opportunity to work with different data sets, 
+        applying analysis and visualization techniques to find patterns and generate insights that could guide strategic decisions. 
+        I am constantly learning, exploring new tools and methodologies that allow me to grow and contribute to technological 
+        innovations in the field of AI, where I intend to grow and specialize more and more.
+      </p>
+  </section>
 
-    <!-- Seção sobre projetos -->
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <ul class="project-list">
-            <li>
-                <img src="..\images\project1.jpeg" alt="Project 1">
-                <a href="https://github.com/username/project1" class="project-name">Project 1</a>
-            </li>
-            <li>
-                <img src="..\images\project1.jpeg" alt="Project 2">
-                <a href="https://github.com/username/project1 " class="project-name">Project 2</a>
-            </li>
-        </ul>
-    </section>
+  <!-- Seção sobre projetos -->
+  <section id="projects" class="section scroll-reveal">
+    <h2 class="scroll-reveal">Projects</h2>
+    <ul class="project-list scroll-reveal">
+        <li>
+            <img src="..\images\project1.jpeg" alt="Project 1">
+            <a href="project1.html" class="project-name">Project 1</a>
+        </li>
+        <li>
+            <img src="..\images\project2.jpeg" alt="Project 2">
+            <a href="project2.html" class="project-name">Project 2</a>
+        </li>
+        <li>
+            <img src="..\images\project3.jpeg" alt="Project 3">
+            <a href="project3.html" class="project-name">Project 3</a>
+        </li>
+        <li>
+            <img src="..\images\project4.jpeg" alt="Project 4">
+            <a href="project4.html" class="project-name">Project 4</a>
+        </li>
+    </ul>
+    <a href="\projects\indexp.html" class="more-projects scroll-reveal">More Projects</a>
+  </section>
 
-    <!-- Seção de Contato -->
-    <section id="contact" class="section">
-        <h2>Contact me</h2>
-        <p>Want to connect? Reach out to me at <a href="mailto:alice@example.com">alice@example.com</a>.</p>
+  <!-- Seção de Contato -->
+  <section id="contact" class="section scroll-reveal">
+      <h2 class="scroll-reveal">Contact me</h2>
+      <p class="scroll-reveal">
+          Want to connect? Reach out to me at <a class="link-email" href="mailto:alicecruz2003@gmail.com">alicecruz2003@gmail.com</a>.
+      </p>
+  </section>
 
-    </section>
-   <!--  class="finisher-header" style="width: 100%; height: 100vh;"
-    Scripts 
+    
+  <!-- Scripts -->
     <script src="script.js"></script>
     <script src="finisher-header.es5.min.js" type="text/javascript"></script>
-    Inicializando o efeito 
+    <!--Inicializando o efeito     -->
     <script type="text/javascript">
         new FinisherHeader({
           "count": 12,  // Número de partículas
@@ -96,6 +113,30 @@
           "shapes": ["c"]             // Forma das partículas (círculo, no caso)
         });
     </script> 
-    -->
+
+
+  <!-- Scripts -->
+  <script>
+    // Função para ativar o efeito de rolagem
+    function revealOnScroll() {
+      const elements = document.querySelectorAll('.scroll-reveal');
+
+      elements.forEach(element => {
+        const rect = element.getBoundingClientRect();
+        const isVisible = rect.top <= window.innerHeight && rect.bottom >= 0;
+
+        if (isVisible) {
+          element.classList.add('visible'); // Aplica a classe 'visible' quando o elemento entra na tela
+        }
+      });
+    }
+
+    // Verifica a posição dos elementos sempre que a página rolar
+    window.addEventListener('scroll', revealOnScroll);
+
+    // Verifica imediatamente se algum elemento deve aparecer ao carregar a página
+    document.addEventListener('DOMContentLoaded', revealOnScroll);
+  </script>
+
 </body>
 </html>
